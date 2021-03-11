@@ -23,27 +23,28 @@
 
     <main>
       <h2>Name Your Burger</h2>
+      <input type="text" name="nome-panino" placeholder="inserisci il nome del panino"  value="">
       <h3>Ingredients</h3>
       <!-- sezione aggiunta ingredienti -->
       <section>
         <div>
           <ul>
-            <li>
+            <li class="ingredient">
               <img src="img/cheese.svg" alt="immagine ingrediente">
               <span>Cheese</span>
-              <input type="checkbox" name="" value="">
+              <input type="checkbox" name="" data-value="2">
               <span>add</span>
             </li>
-            <li>
+            <li class="ingredient">
               <img src="img/cheese.svg" alt="immagine ingrediente">
               <span>Egg</span>
-              <input type="checkbox" name="" value="">
+              <input type="checkbox" name="" data-value="2">
               <span>add</span>
             </li>
-            <li>
+            <li class="ingredient">
               <img src="img/cheese.svg" alt="immagine ingrediente">
               <span>Mustard</span>
-              <input type="checkbox" name="" value="">
+              <input type="checkbox" name="" data-value="2">
               <span>add</span>
             </li>
           </ul>
@@ -51,22 +52,22 @@
 
         <div>
           <ul>
-            <li>
+            <li class="ingredient">
               <img src="img/cheese.svg" alt="">
               <span>Tomato</span>
-              <input type="checkbox" name="" value="">
+              <input type="checkbox" name="" data-value="4">
               <span>add</span>
             </li>
-            <li>
+            <li class="ingredient">
               <img src="img/cheese.svg" alt="immagine ingrediente">
               <span>Lettuce</span>
-              <input type="checkbox" name="" value="">
+              <input type="checkbox" name="" data-value="4">
               <span>add</span>
             </li>
-            <li>
+            <li class="ingredient">
               <img src="img/cheese.svg" alt="immagine ingrediente">
               <span>Ketchup</span>
-              <input type="checkbox" name="" value="">
+              <input type="checkbox" name="" data-value="4">
               <span>add</span>
             </li>
           </ul>
@@ -77,7 +78,7 @@
 
 
       <div class="discount">
-        <span>Discount Coupon</span>
+        <label for="coupons">coupon</label>
         <input id="coupons" type="text" name="coupons" value="">
       </div>
 
@@ -104,7 +105,7 @@
 
 
 
-
+<script src="js/script.js" charset="utf-8"></script>
 </body>
 
 </html>
