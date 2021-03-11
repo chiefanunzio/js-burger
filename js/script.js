@@ -10,17 +10,30 @@ calculate.addEventListener('click', function(){
     var stockPrice = 10;
     var checkboxs = document.getElementsByClassName('checkbox');
 
-    for (var i = 0; i < checkboxs.length; i++) {
+    for (var i = 0; i < checkboxs.length ; i++) {
       var checkbox = checkboxs[i];
       var addCheckbox = checkbox.checked;
-      var priceCheckbox = parseInt(checkbox.data.price);
+      var priceCheckbox = parseInt(checkbox.dataset.price);
 
       if(addCheckbox){
         stockPrice += priceCheckbox
       }
-      console.log(stockPrice);
     }
 
+    var coupons = [
+      'pippo',
+      'topolino',
+      'pluto'
+    ]
+
+    var discount = document.getElementById('coupons').value;
+    if(coupons.includes(discount)){
+
+      stockPrice -= stockPrice / 10 * 2;
+    }
+
+    var totalPrice = document.getElementById('total-price');
+    totalPrice.innerHTML = (stockPrice);
   }
 
 });
