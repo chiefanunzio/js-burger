@@ -1,0 +1,76 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #ccc;
+}
+
+main{
+  width: 70%;
+  margin: auto;
+}
+
+span{
+  margin: 0 10px;
+}
+
+header{
+  background-color: orange;
+
+  height: 30vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo img{
+  width: 100px;
+}
+
+main h3, main h2{
+  margin:20px 0;
+}
+
+button{
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: orange;
+  border-style: none;
+}
+
+ul li{
+  list-style: none;
+  padding: 10px;
+}
+
+li  img{
+  width: 30px;
+  vertical-align: middle;
+}
+
+section{
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.calc{
+  text-align: center;
+  padding-top: 30px;
+}
+
+footer{
+  margin-top: 30px;
+  padding:20px 90px;
+  background-color: purple;
+  color:#ddd;
+  display: flex;
+  justify-content: space-between;
+}
+
+#total-price{
+  margin: 0;
+}
