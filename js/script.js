@@ -1,4 +1,4 @@
-// GOAL: sulla base di quanto visto a lezione, cercare di riprodurre il calcolo del prezzo del panino che parte da 10E, a cui vanno aggiunti i costi per gli ingredienti supplementari e va applicato un eventuale sconto in base al coupon.
+
 
 var calculate = document.getElementById('calculate');
 calculate.addEventListener('click', function(){
@@ -33,7 +33,7 @@ calculate.addEventListener('click', function(){
     }
 
     var totalPrice = document.getElementById('total-price');
-    totalPrice.innerHTML = (stockPrice);
+    totalPrice.innerHTML = stockPrice.toFixed(2);
   }
 
 });
